@@ -1,4 +1,5 @@
 <?php
+use app\Model\DataHandler\DataHandler;
 
 $data = [
     "arr1" => ["id" => 1, "name" => "name1", "age" => "age1"],
@@ -6,3 +7,6 @@ $data = [
     "arr3" => ["id" => 3, "name" => "name3", "age" => "age3"]
 ];
 
+$dataHandler = new DataHandler($data);
+
+$dataHandler->check();

@@ -8,8 +8,9 @@ class Model{
     protected $id;
     protected $name;
     protected $age;
+    protected $data;
 
-    public function __construct($id)
+    public function __construct()
     {
 
     }
