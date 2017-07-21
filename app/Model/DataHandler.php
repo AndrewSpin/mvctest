@@ -1,9 +1,5 @@
 <?php
 
-namespace app\Model\DataHandler;
-
-require_once "../../data/data.php";
-
 class DataHandler
 {
     protected $date;
@@ -11,6 +7,11 @@ class DataHandler
     public function __construct($data)
     {
         $this->date=$data;
+    }
+
+    public function getProductById($id)
+    {
+        return $this->date["$id"];
     }
 
     public function check()

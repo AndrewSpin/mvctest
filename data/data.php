@@ -1,12 +1,10 @@
 <?php
-use app\Model\DataHandler\DataHandler;
+
 
 $data = [
-    "arr1" => ["id" => 1, "name" => "name1", "age" => "age1"],
-    "arr2" => ["id" => 2, "name" => "name2", "age" => "age2"],
-    "arr3" => ["id" => 3, "name" => "name3", "age" => "age3"]
+    "1" => ["id" => 1, "name" => "name1", "age" => "1"],
+    "2" => ["id" => 2, "name" => "name2", "age" => "2"],
+    "3" => ["id" => 3, "name" => "name3", "age" => "3"],
+    "4" => ["id" => 4, "name" => "name4", "age" => "4"]
 ];
 
-$dataHandler = new DataHandler($data);
-
-$dataHandler->check();
