@@ -8,13 +8,26 @@ class Model{
     protected $name;
     protected $age;
 
-    public function __construct($data, $id)
+    public function __construct($data)
     {
-        $this->data=$data;
+        $this->data = $data;
+    }
+
+    public function setVariables($id)
+    {
         $this->product = $this->data->getProductById($id);
         $this->id = $this->product["id"];
         $this->name = $this->product["name"];
         $this->age = $this->product["age"];
+    }
+
+    /**
+     * @return array
+     */
+    public function getProduct()
+    {
+        return $this->product;
+
     }
 
     /**
